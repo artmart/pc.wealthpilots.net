@@ -13,15 +13,18 @@ $this->title = 'Login';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
-<div class="mt-5 offset-lg-1 col-lg-4 white-space" style="padding: 40px; border-radius: 10px; background-color: #f9f6f6; margin-top: 120px !important;">
+<div class="mt-5 offset-md-1 col-md-4 white-space" style="padding: 25px; 
+                                                            padding-top: 15px;
+                                                            padding-bottom: 15px;
+                                                            border-radius: 5px; background: rgba(238, 238, 238, 0.8); margin-top: 120px !important;">
 <?php /*
     <h1><?= Html::encode($this->title) ?></h1>
     <p>Please fill out the following fields to login:</p>
     */ 
     echo Html::img('/img/logo2.png', ['alt' => Yii::$app->name, 'width'=>'100%']);
     ?>
-    <br />
-    <br />
+    <div class="w-100" style="text-align: center !important; font-size: 100% !important;">COMPARISON CALCULATOR</div>
+  
     <div class="row">
         <div class="col-lg-12">
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
