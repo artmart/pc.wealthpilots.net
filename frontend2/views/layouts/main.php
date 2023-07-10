@@ -24,7 +24,7 @@ AppAsset::register($this);
 <header>
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('/img/logo.jpg', ['alt' => Yii::$app->name, 'height'=>'40px']), //, height: 40px;
+        'brandLabel' => Html::img('/wp/img/pic.png', ['alt' => Yii::$app->name, 'height'=>'40px']), //, height: 40px;
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-expand-md navbar-light fixed-top',
