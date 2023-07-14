@@ -15,7 +15,7 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend2',
-            'baseUrl' => '/wp',
+            'baseUrl' => '/atv',
         ],
         'user' => [
             'identityClass' => 'common\models\User',

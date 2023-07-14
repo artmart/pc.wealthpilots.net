@@ -1,6 +1,6 @@
 <?php
 use common\widgets\Alert;
-use frontend\assets\AppAsset;
+use frontend2\assets\AppAsset;
 use yii\bootstrap4\Breadcrumbs;
 use yii\bootstrap4\Html;
 use yii\bootstrap4\Nav;
@@ -24,7 +24,7 @@ AppAsset::register($this);
 <header>
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('/img/logo2.png', ['alt' => Yii::$app->name, 'height'=>'40px']), //, height: 40px;
+        'brandLabel' => Html::img('/wp/img/pic.png', ['alt' => Yii::$app->name, 'height'=>'40px']), //, height: 40px;
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-expand-md navbar-light fixed-top',
@@ -46,7 +46,7 @@ AppAsset::register($this);
         $menuItems[] =         [
             'label' => strtoupper(substr(Yii::$app->user->identity->firstname, 0, 1) .substr(Yii::$app->user->identity->lastname, 0, 1)),
             'items' => [
-                 ['label' => 'Logout', 'url' => '/site/logout'],
+                 ['label' => 'Logout', 'url' => '/wp/site/logout'],
                  //['label' => 'Level 1 - Dropdown B', 'url' => '#'],
             ],
         ];

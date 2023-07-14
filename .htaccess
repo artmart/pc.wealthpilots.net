@@ -15,7 +15,12 @@ RewriteRule ^admin(/.+)?$ /backend/web/$1 [L,PT]
 RewriteCond %{REQUEST_URI} ^/wp/$
 RewriteRule ^(wp)/$ /$1 [R=301,L]
 RewriteCond %{REQUEST_URI} ^/wp
-RewriteRule ^wp(/.+)?$ /frontend2/web/$1 [L,PT]
+RewriteRule ^wp(/.+)?$ /frontend/web/$1 [L,PT]
+
+RewriteCond %{REQUEST_URI} ^/atv/$
+RewriteRule ^(atv)/$ /$1 [R=301,L]
+RewriteCond %{REQUEST_URI} ^/atv
+RewriteRule ^atv(/.+)?$ /frontend2/web/$1 [L,PT]
 
 RewriteCond %{REQUEST_URI} ^.*$
 RewriteRule ^(.*)$ /frontend/web/$1

@@ -17,7 +17,7 @@ AppAsset::register($this);
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
 
-<main role="main" style="background-image: url('/img/login.png'); 
+<main role="main" style="background-image: url('/img/login2.png'); 
   background-color: #cccccc; 
   height: 100%; 
   background-position: center; 

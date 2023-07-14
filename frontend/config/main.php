@@ -8,14 +8,14 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-    'name'=>'tts.wealthpilots.net',
+    'name'=>'wealthpilots.net',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
-            'baseUrl' => '',
+            'baseUrl' => '/wp',
         ],
         'user' => [
             'identityClass' => 'common\models\User',

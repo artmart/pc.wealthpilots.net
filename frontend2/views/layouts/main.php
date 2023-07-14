@@ -1,6 +1,6 @@
 <?php
 use common\widgets\Alert;
-use frontend2\assets\AppAsset;
+use frontend\assets\AppAsset;
 use yii\bootstrap4\Breadcrumbs;
 use yii\bootstrap4\Html;
 use yii\bootstrap4\Nav;
@@ -24,14 +24,14 @@ AppAsset::register($this);
 <header>
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('/wp/img/pic.png', ['alt' => Yii::$app->name, 'height'=>'40px']), //, height: 40px;
+        'brandLabel' => Html::img('/img/logo2.png', ['alt' => Yii::$app->name, 'height'=>'40px']), //, height: 40px;
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-expand-md navbar-light fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/wp/site/index']],
+        ['label' => 'Home', 'url' => ['/site/index']],
         //['label' => 'About', 'url' => ['/site/about']],
         //['label' => 'Calculator', 'url' => ['/calculations/create']],
         
@@ -39,14 +39,14 @@ AppAsset::register($this);
         //['label' => 'Contact', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/wp/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/wp/site/login']];
+        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
         
         $menuItems[] =         [
             'label' => strtoupper(substr(Yii::$app->user->identity->firstname, 0, 1) .substr(Yii::$app->user->identity->lastname, 0, 1)),
             'items' => [
-                 ['label' => 'Logout', 'url' => '/wp/site/logout'],
+                 ['label' => 'Logout', 'url' => '/atv/site/logout'],
                  //['label' => 'Level 1 - Dropdown B', 'url' => '#'],
             ],
         ];

@@ -21,9 +21,10 @@ $this->title = 'Login';
     <h1><?= Html::encode($this->title) ?></h1>
     <p>Please fill out the following fields to login:</p>
     */ 
-    echo Html::img('/img/logo2.png', ['alt' => Yii::$app->name, 'width'=>'100%']);
+    echo Html::img('/wp/img/pic.png', ['alt' => Yii::$app->name, 'width'=>'100%']);
     ?>
-    <div class="w-100" style="text-align: center !important; font-size: 100% !important;">COMPARISON CALCULATOR</div>
+    <br />
+  <!--  <div class="w-100" style="text-align: center !important; font-size: 100% !important;">COMPARISON CALCULATOR</div>-->
   
     <div class="row">
         <div class="col-lg-12">
